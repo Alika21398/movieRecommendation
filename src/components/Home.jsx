@@ -37,6 +37,7 @@ const Home = () => {
             </div>
 
         </div>
+
         {/*  description image */}
         <div className='bg-[#8B21EE] flex justify-between gap-20  px-11 lg:px-44 py-10 lg:py-20  items-center'>
             
@@ -50,6 +51,26 @@ const Home = () => {
 
             </div>
           
+        </div>
+
+        {/* mobile description */}
+        <div className='flex justify-between gap-28 px-44 my-16 items-center'>
+            <div className='w-[50%]'>
+                <img src= {mobile} alt="" />
+            </div>
+            <div className='w-[50%]'>
+                <h2 className='text-4xl font-bold py-5'>It has never been <span className='text-[#F50000]'>easier</span> to watch free movies online.</h2>
+                <p className='leading-8 py-3'>Once you register for a free account with DiveInCinema, we’ll keep your place from screen to screen as long as you’re signed in. No matter what device you choose, your free movies will pick up where you left off with ease.</p>
+                <button className='my-5 px-8 py-3 text-white bg-[#F50000] rounded-3xl'>Watch Free</button>
+            </div>
+
+        </div>
+
+        {/* Playing now swiper */}
+        <div className='my-16 py-10'>
+            <div className='my-5'>
+                <h2 className='text-center font-bold text-4xl'>Playing Now on DiveInCinema</h2>
+            </div>
         </div>
        
         
