@@ -1,7 +1,13 @@
 import React from 'react'
 import home from '../assets/home.png'
 import mobile from '../assets/mobile.png'
+import earth from '../assets/earth.svg'
+import movie from '../assets/movie.svg'
+import piggy from '../assets/piggy.svg'
+import devices from '../assets/devices.svg'
+
 import discoverimage from '../assets/discoverimage.png'
+
 
 const Home = () => {
   return (
@@ -18,20 +24,26 @@ const Home = () => {
 
         </div>
         </div>
-        <div className='flex justify-between px-11 lg:px-44 my-10 gap-10'>
+
+        {/* divisions  */}
+        <div className='flex justify-between items-center px-11 lg:px-44 my-20 gap-10'>
             <div>
+                <div className='w-[22%]'><img className='w-full' src={earth} alt="earth" /></div>
                 <h2 className='font-bold text-xl lg:text-2xl py-5 '>Works WorldWide</h2>
                 <p>No other free streaming service delivers more content to and from more countries worldwide.</p>
             </div>
             <div>
+                <div className='w-[21%]'><img className='w-full' src={movie} alt="earth" /></div>
                 <h2 className='font-bold text-xl lg:text-2xl py-5 '>Works WorldWide</h2>
                 <p>No other free streaming service delivers more content to and from more countries worldwide.</p>
             </div>
             <div>
+                <div className='w-[21%]'><img className='w-full' src={piggy} alt="earth" /></div>
                 <h2 className='font-bold text-xl lg:text-2xl py-5 '>Always 100% Free</h2>
                 <p>Welcome to instant gratification at its best. Watch now without any payment or subscription and end the search for free movie websites.</p>
             </div>
             <div>
+                <div className='w-[21%]'><img className='w-full' src={devices} alt="earth" /></div>
                 <h2 className='font-bold text-xl lg:text-2xl py-5 '>Device Friendly</h2>
                 <p>Stream the good stuff from your favorite devices including Apple, Android, Smart TVs and more.</p>
             </div>
