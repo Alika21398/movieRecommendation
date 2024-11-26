@@ -9,7 +9,7 @@ import devices from "../assets/devices.svg";
 
 import discoverimage from "../assets/discoverimage.png";
 
-import Swipper from "./Swipper";
+import Swipper from "../components/Swipper";
 
 const Home = () => {
   return (
