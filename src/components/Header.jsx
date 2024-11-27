@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <section className="py-5 bg-[#2F2D2D]">
+      <header className="py-5 bg-[#2F2D2D] z-[100]">
         <div className="px-11 lg:px-44 flex justify-between bg-[#2F2D2D]">
           <div className="flex gap-5 items-center">
             <div>
@@ -35,7 +35,7 @@ const Header = () => {
             </li>
           </nav>
         </div>
-      </section>
+      </header>
     </>
   );
 };

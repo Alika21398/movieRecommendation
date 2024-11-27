@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <>
       <div className="">
-        <div className="w-full h-screen object-contain relative ">
+        <div className="w-full h-screen object-contain relative -mt-[30px] z-0">
           <img className="w-full h-screen" src={home} alt="" />
           <div className="absolute bottom-24 lg:bottom-44 left-16 lg:left-44 text-white md:w-[50%] lg:w-[35%] ">
             <div className="w">
