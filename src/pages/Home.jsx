@@ -10,13 +10,16 @@ import devices from "../assets/devices.svg";
 import discoverimage from "../assets/discoverimage.png";
 
 import Swipper from "../components/Swipper";
-
+import Header from "../components/Header";
 const Home = () => {
   return (
     <>
       <div className="">
-        <div className="w-full h-screen object-contain relative -mt-[30px] z-0">
+        <div className="w-full h-screen object-contain relative ">
           <img className="w-full h-screen" src={home} alt="" />
+
+          <Header/>
+
           <div className="absolute bottom-24 lg:bottom-44 left-16 lg:left-44 text-white md:w-[50%] lg:w-[35%] ">
             <div className="w">
               <h2 className="text-4xl lg:text-5xl font-bold leading-6">
