@@ -1,39 +1,47 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../App.css'
+import user from '../assets/user.svg'
 
 const Header = () => {
   return (
     <>
-      <header className="py-5 bg-[#2F2D2D] z-[100]">
-        <div className="px-11 lg:px-44 flex justify-between bg-[#2F2D2D]">
-          <div className="flex gap-5 items-center">
+      <header className="py-3 bg-[#2F2D2D] absolute top-3 left-16 px-11 lg:px-11 opacity-90 rounded-xl w-[90%] ">
+        <div className=" flex justify-between items-center bg-[#2F2D2D]">
+          <div className="flex gap-10 items-center">
             <div>
               <h2 className="text-[#F50000] text-3xl">DiveInCinema</h2>
             </div>
             <form action="">
-              <input className="bg-[#695D5D] px-6 py-3 rounded-xl flex flex-grow" type="text" placeholder="search..." />
+              <input className="bg-[#695D5D] px-8 py-3 rounded-xl flex flex-grow" type="text" placeholder="search..." />
             </form>
           </div>
-          <nav className="flex gap-3 text-white">
+          <div className="flex gap-5 items-center">
+
+          
+          <nav className="flex gap-10 text-white">
             <li>
               <Link>Comedy</Link>
             </li>
             <li>
-              <Link>Comedy</Link>
+              <Link>Action</Link>
             </li>
             <li>
-              <Link>Comedy</Link>
+              <Link>Horror</Link>
             </li>
             <li>
-              <Link>Comedy</Link>
+              <Link>Romantic</Link>
             </li>
             <li>
-              <Link>Comedy</Link>
+              <Link>Sci-fi</Link>
             </li>
             <li>
-              <Link>Comedy</Link>
+              <Link>More</Link>
             </li>
+           
           </nav>
+          <div className="w-[30px] "><img  src={user} alt="" /></div>
+          </div>
         </div>
       </header>
     </>
