@@ -40,7 +40,7 @@ const Header = () => {
             </li>
            
           </nav>
-          <div className="w-[30px] "><img  src={user} alt="" /></div>
+          <div className="w-[25px] "><img  src={user} alt="" /></div>
           </div>
         </div>
       </header>
