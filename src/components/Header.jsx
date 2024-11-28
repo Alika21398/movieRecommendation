@@ -6,7 +6,7 @@ import user from '../assets/user.svg'
 const Header = () => {
   return (
     <>
-      <header className="py-3 bg-[#2F2D2D] absolute top-3 left-16 px-11 lg:px-11 opacity-90 rounded-xl w-[90%] ">
+      <header className="py-3 bg-[#2F2D2D] absolute top-3 left-16 px-11 lg:px-[90px] opacity-90 rounded-xl w-[90%] ">
         <div className=" flex justify-between items-center bg-[#2F2D2D]">
           <div className="flex gap-10 items-center">
             <div>
