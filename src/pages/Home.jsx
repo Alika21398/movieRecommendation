@@ -11,6 +11,7 @@ import discoverimage from "../assets/discoverimage.png";
 
 import Swipper from "../components/Swipper";
 import Header from "../components/Header";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
@@ -30,8 +31,8 @@ const Home = () => {
                 that spice
               </p>
             </div>
-            <button className="px-6 py-3 bg-[#F50000] rounded-3xl ">
-              Watch Now
+            <button className="px-6 py-3 bg-[#F50000] rounded-3xl "><Link to={"cat"}>
+              Watch Now</Link>
             </button>
           </div>
         </div>
