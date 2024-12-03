@@ -5,6 +5,7 @@ import App from './App.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Footer from './components/Footer.jsx'
+import Category from './pages/Category.jsx'
 
 
 const router = createBrowserRouter ([
@@ -17,6 +18,10 @@ const router = createBrowserRouter ([
         index : true,
         element: <Home/>
       },
+      {
+        path:"cat",
+        element: <Category/>
+      }
       
     ]
   }
