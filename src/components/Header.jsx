@@ -10,7 +10,7 @@ const Header = () => {
         <div className=" flex justify-between items-center bg-[#2F2D2D]">
           <div className="flex gap-10 items-center">
             <div>
-              <h2 className="text-[#F50000] text-3xl">DiveInCinema</h2>
+              <h2 className="text-[#F50000] text-3xl"><a href="/">DiveInCinema</a></h2>
             </div>
             <form action="">
               <input className="bg-[#695D5D] px-8 py-3 rounded-xl flex flex-grow" type="text" placeholder="search..." />
