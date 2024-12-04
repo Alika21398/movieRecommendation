@@ -19,6 +19,19 @@ const Category = () => {
           </div>
         </div>
       </section>
+      <section>
+        <div className="flex">
+          <div className="text-center align-middle bg-gradient-to-r from-black to-[#2220208d] text-white">
+            <h2>Stream Now!</h2>
+            <p>With Plex you can watch over 20,000 free movies and shows, plus Live TV on almost any device. What are you waiting for?</p>
+          </div>
+        <div>
+          <video autoPlay loop src="https://website-static.plex.tv/videos/home_hero_background_2024.mp4"></video>
+        </div>
+
+        </div>
+        
+      </section>
     </>
   );
 };
