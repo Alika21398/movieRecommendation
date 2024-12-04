@@ -34,6 +34,7 @@ const Swipper = () => {
             
               onSlideChange={() => console.log("slide change")}
               onSwiper={(swiper) => console.log(swiper)}
+             
             >
               <SwiperSlide>
                 <img src={photo1} alt="" />
