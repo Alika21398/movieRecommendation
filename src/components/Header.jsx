@@ -20,23 +20,23 @@ const Header = () => {
 
           
           <nav className="flex gap-10 text-white">
-            <li>
-              <Link>Comedy</Link>
+            <li >
+              <Link to={"cat/comedy"}>Comedy</Link>
             </li>
             <li>
-              <Link>Action</Link>
+              <Link to={"cat/action"}>Action</Link>
             </li>
             <li>
-              <Link>Horror</Link>
+              <Link to={"cat/horror"}>Horror</Link>
             </li>
             <li>
-              <Link>Romantic</Link>
+              <Link to={"cat/romantic"}>Romantic</Link>
             </li>
             <li>
-              <Link>Sci-fi</Link>
+              <Link to={"cat/sci-fi"}>Sci-fi</Link>
             </li>
             <li>
-              <Link>More</Link>
+              <Link to={"cat/more"}>More</Link>
             </li>
            
           </nav>
