@@ -44,3 +44,21 @@ li{
   
   list-style: none;
 }
+.browse_button{
+  padding: 12px 24px;
+  background-color:#F50000 ;
+  color: white;
+  border-radius: 30px;
+}
+.browse_button:hover{
+  background-color:#f50000af ;
+
+}
+nav li{
+  transition: all 0.3s ease;
+}
+nav li:hover{
+  color:#F50000;
+  /* text-decoration: underline; */
+
+}
