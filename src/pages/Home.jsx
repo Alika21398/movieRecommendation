@@ -105,9 +105,11 @@ const Home = () => {
               DiveInCinema. Connect with friends to see who’s watching what,
               where.
             </p>
+            <Link to={"cat"}>
             <button className="px-8 py-3 bg-[#F50000] text-white rounded-3xl">
               Discover More Now
             </button>
+            </Link>
           </div>
           <div className="w-full md:w-[60%] ">
             <img className="w-full" src={discoverimage} alt="" />
@@ -130,9 +132,11 @@ const Home = () => {
               matter what device you choose, your free movies will pick up where
               you left off with ease.
             </p>
+            <Link to={"cat"}>
             <button className="my-5 px-8 py-3 text-white bg-[#F50000] rounded-3xl">
               Watch Free
             </button>
+            </Link>
           </div>
         </div>
 
