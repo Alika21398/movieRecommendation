@@ -1,35 +1,12 @@
 import React from "react";
 import Swipper from "../components/Swipper";
 import SwipperC from "../components/SwipperC";
+import { Link, Outlet } from "react-router-dom";
+import Main_Header from "../components/Main_Header";
 
 const Category = () => {
   return (
     <>
-      <section className="sticky top-0 z-50">
-        <div className="px-11 lg:px-44 py-5 bg-[#2F2D2D] flex gap-10 justify-between items-center text-white">
-          <div className="flex gap-5 items-center">
-            <div>
-              <h2 className="text-[#F50000] text-3xl"><a href="/">DiveInCinema</a></h2>
-            </div>
-            <input
-              className="px-4 py-1 bg-gray-600 rounded-3xl w-[350px]"
-              type="text"
-              placeholder="search for movies or character"
-            />
-            <div>
-              <button className="px-4 py-2 border-2 border-gray-600 rounded-3xl">
-               <a href="/cat"> Home</a>
-              </button>
-            </div>
-          </div>
-          <div>
-            <button className="px-4 py-2 bg-gray-600 rounded-3xl ">
-             <a href="/cat">Sign In</a> 
-            </button>
-          </div>
-        </div>
-      </section>
-
       <section className="w-full">
         <div className="relative h-[600px]">
 
@@ -53,19 +30,16 @@ const Category = () => {
           </p>
           
         </div>
-        <a href="/"> <button className="px-4 py-2  bg-[#F50000]   mix-blend-normal absolute bottom-[30%] left-[48%] text-white hover:bg-black">
-            Sign In</button></a>
+        <Link to="/"> <button className=" browse_button  z-40   absolute bottom-[30%] left-[48%] hover:bg-[#f5000089]">
+            Sign In</button></Link>
         </div>
-        {/* Filtering content starts */}
-        <div>
-          
-        </div>
-        {/* Filtering content ends */}
+        
 
         {/* most popular part starts  */}
         <div className="px-11 lg:px-44 mt-10">
-          <div className="border-b-2 border-[#F50000] my-5 pb-2">
+          <div className="border-b-2 border-[#F50000] my-5 pb-2 flex justify-between">
             <h3 className="font-bold text-2xl lg:text-3xl ">Most Popular</h3>
+            <Link to="most_popular"><button className="browse_button">See All</button></Link>
           
           </div>
           <SwipperC/>
@@ -76,8 +50,9 @@ const Category = () => {
 
         {/* most watched part starts  */}
         <div className="px-11 lg:px-44 mt-10">
-          <div className="border-b-2 border-[#F50000] my-5 pb-2">
+          <div className="border-b-2 border-[#F50000] my-5 pb-2 flex justify-between">
             <h3 className="font-bold text-2xl lg:text-3xl">Most watched</h3>
+            <Link to="most_watched"><button className="browse_button">See All</button></Link>
           
           </div>
           <SwipperC/>
@@ -88,8 +63,9 @@ const Category = () => {
 
         {/* english starts  */}
         <div className="px-11 lg:px-44 mt-10">
-          <div className="border-b-2 border-[#F50000] my-5 pb-2">
+          <div className="border-b-2 border-[#F50000] my-5 pb-2 flex justify-between">
             <h3 className="font-bold text-2xl lg:text-3xl">English Movies</h3>
+            <Link to="english"><button className="browse_button">See All</button></Link>
           
           </div>
           <SwipperC/>
@@ -97,6 +73,71 @@ const Category = () => {
         </div>
 
           {/* english part ends  */}
+
+        {/* comedy starts  */}
+        <div className="px-11 lg:px-44 mt-10">
+          <div className="border-b-2 border-[#F50000] my-5 pb-2 flex justify-between">
+            <h3 className="font-bold text-2xl lg:text-3xl">Comedy Movies</h3>
+            <Link to="comedy"><button className="browse_button">See All</button></Link>
+          
+          </div>
+          <SwipperC/>
+
+        </div>
+
+          {/* comedy part ends  */}
+
+        {/* Horror starts  */}
+        <div className="px-11 lg:px-44 mt-10">
+          <div className="border-b-2 border-[#F50000] my-5 pb-2 flex justify-between">
+            <h3 className="font-bold text-2xl lg:text-3xl">Horror Movies</h3>
+            <Link to="horror"><button className="browse_button">See All</button></Link>
+          
+          </div>
+          <SwipperC/>
+
+        </div>
+
+          {/* Horror part ends  */}
+
+        {/* Romantic starts  */}
+        <div className="px-11 lg:px-44 mt-10">
+          <div className="border-b-2 border-[#F50000] my-5 pb-2 flex justify-between">
+            <h3 className="font-bold text-2xl lg:text-3xl">Romantic Movies</h3>
+            <Link to="romantic"><button className="browse_button">See All</button></Link>
+          
+          </div>
+          <SwipperC/>
+
+        </div>
+
+          {/* Romantic part ends  */}
+
+        {/* Action starts  */}
+        <div className="px-11 lg:px-44 mt-10">
+          <div className="border-b-2 border-[#F50000] my-5 pb-2 flex justify-between">
+            <h3 className="font-bold text-2xl lg:text-3xl">Action Movies</h3>
+            <Link to="action"><button className="browse_button">See All</button></Link>
+          
+          </div>
+          <SwipperC/>
+
+        </div>
+
+          {/* Action part ends  */}
+          
+        {/* Sci-Fi starts  */}
+        <div className="px-11 lg:px-44 mt-10">
+          <div className="border-b-2 border-[#F50000] my-5 pb-2 flex justify-between">
+            <h3 className="font-bold text-2xl lg:text-3xl">Sci-Fi Movies</h3>
+            <Link to="sci-fi"><button className="browse_button">See All</button></Link>
+          
+          </div>
+          <SwipperC/>
+
+        </div>
+
+          {/* Sci-Fi part ends  */}
         
       </section>
     </>
