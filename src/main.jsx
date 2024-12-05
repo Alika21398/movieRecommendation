@@ -6,6 +6,9 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Footer from './components/Footer.jsx'
 import Category from './pages/Category.jsx'
+import Category_detail from './pages/Category_detail.jsx'
+import Main_Header from './components/Main_Header.jsx'
+import Detail from './pages/Detail.jsx'
 
 
 const router = createBrowserRouter ([
@@ -20,8 +23,29 @@ const router = createBrowserRouter ([
       },
       {
         path:"cat",
-        element: <Category/>
-      }
+        element: <Main_Header/>,
+      
+      children:[
+        {
+          index:true,
+          element:<Category/>
+
+        },
+        {
+          path:":cid",
+          element:<Category_detail/>
+        },
+        
+
+      ]
+
+    },
+    {
+      path:"details/:id",
+      element:<Detail/>,
+    }
+    
+      
       
     ]
   }
