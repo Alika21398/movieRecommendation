@@ -25,7 +25,7 @@ const Category_detail = () => {
           <div className="py-2 px-4  mt-2">
               <div className="w-[100px] lg:w-[200px]  overflow-hidden relative">
                 <img className="hover:translate-y-1 hover:transform hover:scale-110 transition duration-500 ease-in-out rounded-md " src={photo1} alt="" />
-                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white">Imdb: 7.5</p>
+                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white text-[12px] md:text-[16px]">Imdb: 7.5</p>
               </div>
               <div className=" pt-2">
                 <h3>Justice League</h3>
@@ -37,7 +37,7 @@ const Category_detail = () => {
             <div className="py-2 px-4   mt-2">
               <div className="w-[100px] lg:w-[200px] overflow-hidden relative">
                 <img className="hover:translate-y-1 hover:transform hover:scale-110 transition duration-500 ease-in-out rounded-md " src={photo1} alt="" />
-                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white">Imdb: 7.5</p>
+                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white text-[12px] md:text-[16px]">Imdb: 7.5</p>
               </div>
               <div className=" pt-2">
               <h3>Justice League</h3>
@@ -49,7 +49,7 @@ const Category_detail = () => {
           <div className="pt-2 px-4   mt-2">
               <div className="w-[100px] lg:w-[200px] overflow-hidden relative">
                 <img className="hover:translate-y-1 hover:transform hover:scale-110 transition duration-500 ease-in-out rounded-md" src={photo1} alt="" />
-                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white">Imdb: 7.5</p>
+                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white text-[12px] md:text-[16px]">Imdb: 7.5</p>
               </div>
               <div className=" py-2">
                 <h3>Justice League</h3>
@@ -61,7 +61,7 @@ const Category_detail = () => {
           <div className="pt-2 px-4   mt-2">
               <div className="w-[100px] lg:w-[200px] overflow-hidden relative">
                 <img className="hover:translate-y-1 hover:transform hover:scale-110 transition duration-500 ease-in-out rounded-md" src={photo1} alt="" />
-                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white">Imdb: 7.5</p>
+                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white text-[12px] md:text-[16px]">Imdb: 7.5</p>
               </div>
               <div className=" py-2">
                 <h3>Justice League</h3>
@@ -73,7 +73,7 @@ const Category_detail = () => {
           <div className="py-2 px-4   mt-2">
               <div className="w-[100px] lg:w-[200px] overflow-hidden relative">
                 <img className="hover:translate-y-1 hover:transform hover:scale-110 transition duration-500 ease-in-out rounded-md " src={photo1} alt="" />
-                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white">Imdb: 7.5</p>
+                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white text-[12px] md:text-[16px]">Imdb: 7.5</p>
               </div>
               <div className=" pt-2">
                 <h3>Justice League</h3>
@@ -85,7 +85,7 @@ const Category_detail = () => {
           <div className="py-2 px-4   mt-2">
               <div className="w-[100px] lg:w-[200px] overflow-hidden relative">
                 <img className="hover:translate-y-1 hover:transform hover:scale-110 transition duration-500 ease-in-out rounded-md " src={photo1} alt="" />
-                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white">Imdb: 7.5</p>
+                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white text-[12px] md:text-[16px]">Imdb: 7.5</p>
               </div>
               <div className=" pt-2">
                 <h3>Justice League</h3>
@@ -97,7 +97,7 @@ const Category_detail = () => {
           <div className="py-2 px-4   mt-2">
               <div className="w-[100px] lg:w-[200px] overflow-hidden relative">
                 <img className="hover:translate-y-1 hover:transform hover:scale-110 transition duration-500 ease-in-out rounded-md" src={photo1} alt="" />
-                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white">Imdb: 7.5</p>
+                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white text-[12px] md:text-[16px]">Imdb: 7.5</p>
               </div>
               <div className=" pt-2">
                 <h3>Justice League</h3>
@@ -109,7 +109,7 @@ const Category_detail = () => {
           <div className="py-2 px-4   mt-2">
               <div className="w-[100px] lg:w-[200px] overflow-hidden relative">
                 <img className="hover:translate-y-1 hover:transform hover:scale-110 transition duration-500 ease-in-out rounded-md" src={photo1} alt="" />
-                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white">Imdb: 7.5</p>
+                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white text-[12px] md:text-[16px]">Imdb: 7.5</p>
               </div>
               <div className=" pt-2">
                 <h3>Justice League</h3>
@@ -121,7 +121,7 @@ const Category_detail = () => {
           <div className="py-2 px-4   mt-2">
               <div className="w-[100px] lg:w-[200px] overflow-hidden relative">
                 <img className="hover:translate-y-1 hover:transform hover:scale-110 transition duration-500 ease-in-out rounded-md" src={photo1} alt="" />
-                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white">Imdb: 7.5</p>
+                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white text-[12px] md:text-[16px]">Imdb: 7.5</p>
               </div>
               <div className=" pt-2">
                 <h3>Justice League</h3>
@@ -133,7 +133,7 @@ const Category_detail = () => {
           <div className="py-2 px-4   mt-2">
               <div className="w-[100px] lg:w-[200px] overflow-hidden relative">
                 <img className="hover:translate-y-1 hover:transform hover:scale-110 transition duration-500 ease-in-out rounded-md" src={photo1} alt="" />
-                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white">Imdb: 7.5</p>
+                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white text-[12px] md:text-[16px]">Imdb: 7.5</p>
               </div>
               <div className=" pt-2">
                 <h3>Justice League</h3>
