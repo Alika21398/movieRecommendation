@@ -73,3 +73,6 @@ nav li:hover{
   width:50%
   
 }
+body:has(.modalContainer){
+  overflow: hidden;
+}
