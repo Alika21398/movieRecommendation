@@ -25,7 +25,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div>
+            <div className="my-10">
               <h3 className="font-bold text-2xl py-3">Company</h3>
               <ul className="leading-10">
                 <li>About</li>
