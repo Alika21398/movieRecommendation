@@ -16,14 +16,14 @@ const Home = () => {
   return (
     <>
       <div className="">
-        <div className="w-full h-screen object-contain relative ">
-          <img className="w-full h-screen" src={home} alt="" />
+        <div className="w-full h-screen relative ">
+          <img className="w-full h-screen  object-cover" src={home} alt="" />
 
           <Header/>
 
-          <div className="absolute bottom-24 lg:bottom-44 left-16 lg:left-44 text-white md:w-[50%] lg:w-[35%] ">
+          <div className="absolute bottom-24 lg:bottom-44 left-16 lg:left-44 text-white  md:w-[50%] lg:w-[35%] px-10">
             <div className="w">
-              <h2 className="text-4xl lg:text-5xl font-bold leading-6">
+              <h2 className="text-4xl lg:text-5xl font-bold leading-10">
                 Watch Free Online Movies{" "}
               </h2>
               <p className="text-xl py-5">
