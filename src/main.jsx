@@ -9,6 +9,7 @@ import Category from './pages/Category.jsx'
 import Category_detail from './pages/Category_detail.jsx'
 import Main_Header from './components/Main_Header.jsx'
 import Detail from './pages/Detail.jsx'
+import LogIn from './pages/LogIn.jsx'
 
 
 const router = createBrowserRouter ([
@@ -35,6 +36,7 @@ const router = createBrowserRouter ([
           path:":cid",
           element:<Category_detail/>
         },
+       
         
 
       ]
@@ -43,7 +45,8 @@ const router = createBrowserRouter ([
     {
       path:"details/:id",
       element:<Detail/>,
-    }
+    },
+   
     
       
       
