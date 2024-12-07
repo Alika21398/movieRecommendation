@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
+import { useApi } from '../App'
+import LogIn from '../pages/LogIn'
 
 const Main_Header = () => {
+  const {show, setShow} = useApi()
+  console.log("showmain", show)
   return (
     <>
      <section className="sticky top-0 z-50">
@@ -42,12 +46,14 @@ const Main_Header = () => {
            
           </nav>
           <div>
-            <button className="px-4 py-2 bg-gray-600 rounded-3xl browse_button">
-             <a href="/cat">Sign In</a> 
+             <button className="px-4 py-2 bg-gray-600 rounded-3xl browse_button" onClick={()=>{setShow(!show)}}>
+             Sign In
             </button>
+           
           </div>
         </div>
       </section>
+      <LogIn/>
       <Outlet/>
       
     </>
