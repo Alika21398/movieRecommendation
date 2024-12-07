@@ -12,6 +12,7 @@ import photo4 from "../assets/photo4.jpg";
 import photo5 from "../assets/photo5.jpg";
 import photo6 from "../assets/photo6.jpg";
 import photo7 from "../assets/photo7.jpg";
+import { Link } from 'react-router-dom';
 
 
 const Swipper = () => {
@@ -37,26 +38,26 @@ const Swipper = () => {
              
             >
               <SwiperSlide>
-                <img src={photo1} alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={photo2} alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={photo3} alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={photo4} alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={photo5} alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={photo6} alt="" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={photo7} alt="" />
-              </SwiperSlide>
+             <Link to={"/details/comedy"}><img src={photo1} alt="" /></Link> 
+            </SwiperSlide>
+            <SwiperSlide>
+            <Link to={"/details/comedy"}><img src={photo2} alt="" /></Link> 
+            </SwiperSlide>
+            <SwiperSlide>
+             <Link to={"/details/comedy"}> <img src={photo3} alt="" /></Link> 
+            </SwiperSlide>
+            <SwiperSlide>
+             <Link to={"/details/comedy"}> <img src={photo4} alt="" /></Link> 
+            </SwiperSlide>
+            <SwiperSlide>
+             <Link to={"/details/comedy"}> <img src={photo5} alt="" /></Link> 
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to={"/details/comedy"}><img src={photo6} alt="" /></Link> 
+            </SwiperSlide>
+            <SwiperSlide>
+             <Link to={"/details/comedy"}> <img src={photo7} alt="" /></Link> 
+            </SwiperSlide>
             </Swiper>
           </div>
         </div>
