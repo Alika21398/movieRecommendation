@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Swipper from "../components/Swipper";
 import SwipperC from "../components/SwipperC";
 import { Link, Outlet } from "react-router-dom";
 import Main_Header from "../components/Main_Header";
+import { useApi } from "../App";
 
 const Category = () => {
+  const {show, setShow} = useApi()
   return (
     <>
       <section className="w-full">
@@ -22,16 +24,16 @@ const Category = () => {
 
         {/* Gradient Content */}
        
-        <div className="relative  flex flex-col justify-center items-center text-center h-full text-white bg-gradient-to-r from-black via-black/50 to-transparent z-10 mix-blend-overlay">
-          <h2 className="text-5xl font-bold">Stream Now!</h2>
-          <p className="mt-4 max-w-xl text-center">
+        <div className="relative  flex flex-col justify-center items-center text-center h-full text-white bg-gradient-to-r from-black via-black/50 to-transparent z-10 mix-blend-overlay px-10">
+          <h2 className="text-2xl lg:text-5xl font-bold">Stream Now!</h2>
+          <p className="mt-4 max-w-xl text-center text-xs lg:text-3xl">
             With DiveInCinema, you can watch over 20,000 free movies and shows,
             plus Live TV on almost any device. What are you waiting for?
           </p>
           
         </div>
-        <Link to="/"> <button className=" browse_button  z-40   absolute bottom-[30%] left-[48%] hover:bg-[#f5000089]">
-            Sign In</button></Link>
+         <button className=" browse_button  z-40   absolute bottom-[10%] left-[38%] lg:bottom-[30%] lg:left-[48%] hover:bg-[#f5000089]" onClick={()=>setShow(!show)}>
+            Sign In</button>
         </div>
         
 
