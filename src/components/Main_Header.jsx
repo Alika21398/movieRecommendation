@@ -9,8 +9,8 @@ const Main_Header = () => {
   return (
     <>
      <section className="sticky top-0 z-50">
-        <div className="px-11 lg:px-44 py-5 bg-[#2F2D2D] flex gap-5 justify-between items-center text-white">
-          <div className="flex gap-5 items-center">
+        <div className="px-11 lg:px-44 py-5 bg-[#2F2D2D] flex gap-5 justify-between items-center  relative">
+          <div className="flex gap-5 items-center text-white">
             <div>
               <h2 className="text-[#F50000] text-3xl"><a href="/">DiveInCinema</a></h2>
             </div>
@@ -28,19 +28,19 @@ const Main_Header = () => {
           </div>
           <nav className="flex gap-10 text-white">
             <li>
-              <Link to={"comedy"}>Comedy</Link>
+              <Link to={"/cat/comedy"}>Comedy</Link>
             </li>
             <li>
-              <Link to={"action"}>Action</Link>
+              <Link to={"/cat/action"}>Action</Link>
             </li>
             <li>
-              <Link to={"horror"}>Horror</Link>
+              <Link to={"/cat/horror"}>Horror</Link>
             </li>
             <li>
-              <Link to={"romantic"}>Romantic</Link>
+              <Link to={"/cat/romantic"}>Romantic</Link>
             </li>
             <li>
-              <Link to={"sci-fi"}>Sci-fi</Link>
+              <Link to={"/cat/sci-fi"}>Sci-fi</Link>
             </li>
            
            
@@ -51,9 +51,10 @@ const Main_Header = () => {
             </button>
            
           </div>
+          <LogIn/>
         </div>
       </section>
-      <LogIn/>
+      
       <Outlet/>
       
     </>

@@ -5,8 +5,11 @@ import bg_photol from '../assets/photo 2.avif'
 import '../App.css'
 import SwipperH from '../components/SwipperC'
 import { Link } from 'react-router-dom'
+import { useApi } from '../App'
 
 const Detail = () => {
+    const data = useApi()
+    console.log("data", data.budget)
   return (
     <>
     <Main_Header/>
@@ -28,6 +31,7 @@ const Detail = () => {
                 <div className='w-[50%] text-white my-10 '>
                     <h2 className='text-3xl lg:text-5xl font-bold lg:mb-5'>Pewdepie</h2>
                     <h3 className='mb-5'>Genre: Comedy</h3>
+                    <h3 className='mb-5'>Budget: {data.data.budget}</h3>
                     <Link to=""><button className='browse_button lg:mb-5'>Watch Now</button></Link>
                     <p className=''>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero tempora saepe maiores similique voluptatum? Nemo cumque exercitationem asperiores voluptate? Facere?</p>
                 </div>

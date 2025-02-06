@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Swipper from "../components/Swipper";
 import SwipperC from "../components/SwipperC";
 import { Link, Outlet } from "react-router-dom";
 import Main_Header from "../components/Main_Header";
 import { useApi } from "../App";
+import axios from "axios";
 
 const Category = () => {
   const {show, setShow} = useApi()
+   
+ 
+
+ 
   return (
     <>
       <section className="w-full">

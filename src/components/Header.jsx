@@ -2,8 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../App.css'
 import user from '../assets/user.svg'
+import LogIn from "../pages/LogIn";
+import { useApi } from "../App";
 
 const Header = () => {
+  const {show, setShow} = useApi()
   return (
     <>
       <header className="py-3 bg-[#2F2D2D] absolute top-3 left-16 px-11 lg:px-[90px] opacity-90 rounded-xl w-[90%] ">
@@ -41,6 +44,13 @@ const Header = () => {
            
           </nav>
           <div className="w-[25px] "><img  src={user} alt="" /></div>
+          <div>
+             <button className="px-4 py-2 bg-gray-600 rounded-3xl browse_button" onClick={()=>{setShow(!show)}}>
+             Sign In
+            </button>
+           
+          </div>
+          <LogIn/>
           </div>
         </div>
       </header>

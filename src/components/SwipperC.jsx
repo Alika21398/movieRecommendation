@@ -13,8 +13,11 @@ import photo5 from "../assets/photo5.jpg";
 import photo6 from "../assets/photo6.jpg";
 import photo7 from "../assets/photo7.jpg";
 import { Link } from "react-router-dom";
+import { useApi } from "../App";
 
 const SwipperH = () => {
+  const data = useApi()
+  console.log("data", data)
   return (
     <>
       <section className=" ">
@@ -29,9 +32,22 @@ const SwipperH = () => {
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
           >
-            <SwiperSlide>
-             <Link to={"/details/comedy"}><img src={photo1} alt="" /></Link> 
-            </SwiperSlide>
+
+            {/* {data.map((items, index)=>{
+              return(
+                <SwiperSlide>
+                  <div key={index}>
+                  <Link to={"/details/comedy"}><img src={photo1} alt="" /></Link> 
+
+                  </div>
+               
+               </SwiperSlide>
+
+              )
+
+
+            })} */}
+          
             <SwiperSlide>
             <Link to={"/details/comedy"}><img src={photo2} alt="" /></Link> 
             </SwiperSlide>
