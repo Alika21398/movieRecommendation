@@ -33,30 +33,29 @@ const Category_detail = () => {
         </div>
         {/* Filtering content ends */}
 
-        <div className="flex flex-wrap my-10 justify-between">
-          {data.data.map((items, index)=>{
-            return(
-              <Link to="/details/comedy">
-            <div className="py-2 px-4  mt-2" key={index}>
-              <div className="w-[100px] lg:w-[200px]  overflow-hidden relative">
-                <img
-                  className="hover:translate-y-1 hover:transform hover:scale-110 transition duration-500 ease-in-out rounded-md "
-                  src={photo1}
-                  alt=""
-                />
-                <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white text-[12px] md:text-[16px]">
-                 {items.budget}
-                </p>
-              </div>
-              <div className=" pt-2">
-                <h3>{items.title}</h3>
-              </div>
-            </div>
-          </Link>
+        <div className="flex flex-wrap my-10 gap-4 justify-center">
+  {data.data.map((items, index) => (
+    <Link to="/details/comedy" key={index} className="w-[calc(25%-10px)] md:w-[23%] lg:w-[22%]">
+      <div className="py-2 px-4 mt-2">
+        <div className="w-full overflow-hidden relative">
+          <img
+            className="hover:translate-y-1 hover:scale-110 transition duration-500 ease-in-out rounded-md"
+            src={photo1}
+            alt=""
+          />
+          <p className="bg-[#F50000] absolute top-0 right-0 px-2 py-1 text-white text-[12px] md:text-[16px]">
+            {items.budget}
+          </p>
+        </div>
+        <div className="pt-2">
+          <h3>{items.title}</h3>
+        </div>
+      </div>
+    </Link>
+  ))}
+</div>
 
-            )
-          })}
-          
+<div className="flex flex-wrap my-10 gap-4 justify-center"> 
           <Link to="/details/comedy">
             <div className="py-2 px-4   mt-2">
               <div className="w-[100px] lg:w-[200px] overflow-hidden relative">
