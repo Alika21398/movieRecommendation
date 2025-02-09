@@ -8,6 +8,8 @@ import axios from "axios";
 
 const Category = () => {
   const {show, setShow} = useApi()
+   const data = useApi()
+    console.log("data", data.data)
    
  
 
@@ -43,15 +45,21 @@ const Category = () => {
         
 
         {/* most popular part starts  */}
-        <div className="px-11 lg:px-44 mt-10">
-          <div className="border-b-2 border-[#F50000] my-5 pb-2 flex justify-between">
-            <h3 className="font-bold text-2xl lg:text-3xl ">Most Popular</h3>
-            <Link to="most_popular"><button className="browse_button">See All</button></Link>
-          
+        {data.data.map((items, index)=>{
+          return(
+            <div className="px-11 lg:px-44 mt-10" key={index}>
+            <div className="border-b-2 border-[#F50000] my-5 pb-2 flex justify-between">
+              <h3 className="font-bold text-2xl lg:text-3xl ">most popular</h3>
+              <Link to="most_popular"><button className="browse_button">See All</button></Link>
+            
+            </div>
+            <SwipperC/>
+  
           </div>
-          <SwipperC/>
 
-        </div>
+          )
+        })}
+       
 
           {/* most popular part ends  */}
 

@@ -1,10 +1,8 @@
 import React from "react";
 import { useApi } from "../App";
 import photo9 from "../assets/photo9.jpg";
-import SignUp from "./SignUp";
-import { Link } from "react-router-dom";
 
-function LogIn() {
+function SignUp() {
   const { show, setShow } = useApi();
   console.log("showlogin", show);
   return (
@@ -21,7 +19,7 @@ function LogIn() {
                 <img className="w-full h-full" src={photo9} alt="" />
               </div>
               <div className="px-10 w-[50%] py-10 text-center ">
-                <h2 className="text-2xl lg:text-4xl font-bold">Sign In for Free!!!</h2>
+                <h2 className="text-2xl lg:text-4xl font-bold">Sign Up for Free!!!</h2>
                 <div className="">
                   <button className="w-full border-2 px-4 py-2  my-10 rounded-md hover:bg-[#F50000] hover:text-white"><i class="fa-brands fa-google"></i> Continue with Google</button>
                 </div>
@@ -32,8 +30,19 @@ function LogIn() {
                   policy.</button>
                 </p>
                 <div className="text-start my-10">
-                  <label className="text-[#51595E]" htmlFor="">Email or Username</label><br /> <br />
+                  <label className="text-[#51595E]" htmlFor="">Email </label><br /> <br />
                   <input className="border-b w-full border-black " type="email" />
+                </div>
+                <div className="text-start my-10">
+                  <label className="text-[#51595E]" htmlFor="">Username</label><br /> <br />
+                  <input className="border-b w-full border-black " type="text" />
+                </div>
+                <div className="text-start my-10">
+                  <label className="text-[#51595E]" htmlFor="">First Name</label><br /> <br />
+text                </div>
+                <div className="text-start my-10">
+                  <label className="text-[#51595E]" htmlFor="">Last Name</label><br /> <br />
+                  <input className="border-b w-full border-black " type="text" />
                 </div>
                 <div className="text-start my-10 relative">
                   <label className="text-[#51595E]" htmlFor="">Password</label> <br /><br />
@@ -41,9 +50,8 @@ function LogIn() {
                   <button className="absolute top-0 right-0" >Forgot?</button>
                 </div>
                 <div className="flex items-center gap-5">
-                <button className=" flex-1 px-4 py-2 bg-[#F50000] hover:bg-[#f50000b2] text-white rounded-md">Sign In</button>
-                <Link to={SignUp}><a className="text-[#F50000] hover:text-[#f50000b2] underline" href="signUp.jsx">Sign Up</a></Link>
-                
+                <button className=" flex-1 px-4 py-2 bg-[#F50000] hover:bg-[#f50000b2] text-white rounded-md">Sign Up</button>
+                <a className="text-[#F50000] hover:text-[#f50000b2] underline" href="signUp.jsx">Sign In</a>
                 </div>
                 
               </div>
@@ -62,4 +70,4 @@ function LogIn() {
   );
 }
 
-export default LogIn;
+export default SignUp;

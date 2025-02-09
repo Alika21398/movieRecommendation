@@ -1,13 +1,15 @@
 import React, { useState } from "react";
-import { Link, useRoutes } from "react-router-dom";
+import { Link, useParams, useRoutes } from "react-router-dom";
 import photo1 from "../assets/photo5.jpg";
 import Main_Header from "../components/Main_Header";
 import { useApi } from "../App";
 
 const Category_detail = () => {
+    let {cid}=useParams();
   const [category, setCategory] = useState("");
   const data = useApi()
   console.log("data", data.data)
+  console.log("poster", data.data.poster_path)
   return (
     <>
       <section className="px-11 lg:px-44">
@@ -34,8 +36,12 @@ const Category_detail = () => {
         {/* Filtering content ends */}
 
         <div className="flex flex-wrap my-10 gap-4 justify-center">
-  {data.data.map((items, index) => (
-    <Link to="/details/comedy" key={index} className="w-[calc(25%-10px)] md:w-[23%] lg:w-[22%]">
+  {data.data.map((items, index) =>{
+
+    return (
+      
+
+    <Link to={`/details/${items.id}`} key={index} className="w-[calc(25%-10px)] md:w-[23%] lg:w-[22%]">
       <div className="py-2 px-4 mt-2">
         <div className="w-full overflow-hidden relative">
           <img
@@ -48,11 +54,12 @@ const Category_detail = () => {
           </p>
         </div>
         <div className="pt-2">
-          <h3>{items.title}</h3>
+          <h3 className="text-lg text-[#F50000]">{items.title}</h3>
+         
         </div>
       </div>
     </Link>
-  ))}
+  )})}
 </div>
 
 <div className="flex flex-wrap my-10 gap-4 justify-center"> 

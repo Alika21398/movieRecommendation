@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet, useParams } from 'react-router-dom'
 import Home from './pages/Home'
 import { Swiper } from 'swiper/react'
 import Footer from './components/Footer'
@@ -13,12 +13,13 @@ export function useApi(){
 }
 
 const App = () => {
+  let {cid}=useParams();
   const[show, setShow] = useState(false)
   const [data, setData] = useState([])
 
   const fetchApi = async()=>{
     try{
-      const res = await axios.get( "/api/movies")
+      const res = await axios.get( `/api/movies?genre=${cid}`)
       setData(res.data.results)
 
     }

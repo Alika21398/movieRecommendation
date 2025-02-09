@@ -4,6 +4,7 @@ import '../App.css'
 import user from '../assets/user.svg'
 import LogIn from "../pages/LogIn";
 import { useApi } from "../App";
+import SignUp from "../pages/SignUp";
 
 const Header = () => {
   const {show, setShow} = useApi()
@@ -51,6 +52,7 @@ const Header = () => {
            
           </div>
           <LogIn/>
+          {/* <SignUp/> */}
           </div>
         </div>
       </header>
