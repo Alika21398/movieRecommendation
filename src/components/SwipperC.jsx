@@ -17,7 +17,6 @@ import { useApi } from "../App";
 
 const SwipperH = () => {
   const data = useApi()
-  console.log("data", data)
   return (
     <>
       <section className=" ">

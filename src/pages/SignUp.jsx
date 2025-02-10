@@ -4,7 +4,6 @@ import photo9 from "../assets/photo9.jpg";
 
 function SignUp() {
   const { show, setShow } = useApi();
-  console.log("showlogin", show);
   return (
     <>
       {show && (

@@ -20,11 +20,11 @@ const App = () => {
   const fetchApi = async()=>{
     try{
       const res = await axios.get( `/api/movies?genre=${cid}`)
-      setData(res.data.results)
+      setData(res?.data?.results)
 
     }
     catch(error){
-      console.log("error", error)
+      console.error("error", error)
     }
   }
 
@@ -34,8 +34,6 @@ const App = () => {
     fetchApi()
   },[])
 
-  console.log("show", show)
-  console.log("data", data)
   return (
     <Apidata.Provider value={{show, setShow, data}}>
 

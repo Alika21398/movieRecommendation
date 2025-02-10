@@ -31,7 +31,7 @@ const Home = () => {
                 that spice
               </p>
             </div>
-            <Link to={"cat"}>
+            <Link to={"/cat"}>
             <button className="px-6 py-3 bg-[#F50000] rounded-3xl ">
               Watch Now
             </button>

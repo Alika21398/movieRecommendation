@@ -18,13 +18,13 @@ export function formatNumber(value) {
 
   export function formatDollar(value) {
     if (value >= 1_000_000_000_000) {
-      return `$${(value / 1_000_000_000_000).toFixed(2)}T`; // Trillion
+      return `$${(value / 1_000_000_000_000).toFixed(0)} T`; // Trillion
     } else if (value >= 1_000_000_000) {
-      return `$${(value / 1_000_000_000).toFixed(2)}B`; // Billion
+      return `$${(value / 1_000_000_000).toFixed(0)} B`; // Billion
     } else if (value >= 1_000_000) {
-      return `$${(value / 1_000_000).toFixed(2)}M`; // Million
+      return `$${(value / 1_000_000).toFixed(0)} M`; // Million
     } else if (value >= 1_000) {
-      return `$${(value / 1_000).toFixed(2)}K`; // Thousand
+      return `$${(value / 1_000).toFixed(0)} K`; // Thousand
     } else {
       return `$${value?.toLocaleString()}`; // Default formatting with commas
     }

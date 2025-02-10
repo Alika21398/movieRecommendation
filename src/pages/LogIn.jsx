@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 function LogIn() {
   const { show, setShow } = useApi();
-  console.log("showlogin", show);
   return (
     <>
       {show && (
